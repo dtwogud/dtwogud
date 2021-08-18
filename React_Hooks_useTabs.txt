@@ -1,0 +1,24 @@
+React Hooks - useTabs
+useState()는 최상단에서 호출되어야 함
+https://ko.reactjs.org/docs/hooks-rules.html
+
+const content = [
+  {
+    tab: "Section 1",
+    content: "I'm the content of Section 1"
+  },
+  {
+    tab: "Section 2",
+    content: "I'm the content of Section 2"
+  }
+];
+
+배열 선언 후 
+const App() => {
+  return (
+    <div className = "App">
+      {content.map(section => (
+        <button>{section.tab}</button>
+      ))}
+    </div>
+으로 버튼2개 만듦
