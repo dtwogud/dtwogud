@@ -1,0 +1,12 @@
+React Hooks - useConfirm
+
+Hooks라고 하기도 애매함 -> useEffect와 useState를 사용하지 않음..;
+
+confirm -> window.confirm으로 수정
+
+React Hooks - usePreventLeave
+저장하지 않고 문서를 닫거나 할때 알림
+Hooks라고 하기도 애매함 -> useEffect와 useState를 사용하지 않음..;
+https://ko.reactjs.org/docs/handling-events.html
+
+beforeunload는 wondow가 닫히기 전에 function이 실행되는 걸 허락

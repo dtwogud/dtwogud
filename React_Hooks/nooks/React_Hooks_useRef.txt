@@ -1,0 +1,14 @@
+React Hooks - useRef
+
+-. references : component의 어떤 부분을 선택할 수 있는 방법
+ex)
+conse potato = useRef();
+return (
+  <input ref={potato} placeholer="hi" />
+
+-. setTimeout(() => potato.current?.focus(), 2000);
+  : 너무빠른 mount때문에 potato.current가 극초반에 존재하지 않아서 optional chaining"?"를 사용
+  : 또는 useEffect를 이용해 마운트 끝난 후 focus해주기
+    useEffect(() => {
+      setTimeout(() => potato.current?.focus(), 2000);
+    })
