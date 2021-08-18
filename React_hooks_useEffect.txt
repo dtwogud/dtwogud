@@ -1,0 +1,4 @@
+React Hooks useEffect
+
+많은 use를 가짐
+componentWillUnMount, componentDidMount, componentWillUpdate와 비슷
