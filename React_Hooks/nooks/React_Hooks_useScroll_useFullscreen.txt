@@ -1,3 +1,29 @@
 React-Hooks_useScroll
 
 React-Hooks_useFullscreen
+[전체화면]이 아닐 때 "Exit fullscreen"을 누르면 생기는 오류 해결법
+  : document.fullscreenElement로 전체화면인지 체크한 후 아닐 경우에만
+document.exitFullscreen()을 실행
+
+const exitFull = () => {
+    const checkFullScreen = document.fullscreenElement;
+    if (checkFullScreen !== null) {
+      document.exitFullscreen();
+    }
+    if (callback && typeof callback === "function") {
+      callback(false);
+    }
+  };
+  return { element, triggerFull, exitFull };
+};
+
+callback함수 유무와 callback함수 형태 확인을 위한 조건문 을 함수로 지정
+ : const runCb = (isFull) => {
+    if (callback && typeof callback === "function") {
+      callback(isFull);
+    }
+
+사진 삽입을 위해
+import k from "./k.jpg";
+
+<img src={k}/>
