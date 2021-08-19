@@ -1,0 +1,15 @@
+https://velog.io/@ki_blank/JavaScript-%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98Arrow-function
+React Hooks - useBeforeLeave
+
+기본적으로 탭을 닫을 때 실행되는 function
+마우스가 페이지를 벗어날 때 실행
+
+return값이 없어서 따로 호출만해주면 됨useBeforeLeave();
+
+
+React Hooks - useFadeIn
+자동으로 서서히 나타나는 하나의 element
+element 안으로 나타나게 하기위해 useEffect를 다시 씀
+
+React Hooks - useNetwork
+navigator가 online또는 offline이 되는걸 막아줌
