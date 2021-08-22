@@ -1,0 +1,14 @@
+React-Hooks_useNorification(Hooks는 아님)
+https://developer.mozilla.org/ko/docs/Web/API/notification
+
+구글크롬 알람처럼 norification을 해줌..
+
+크롬 콘솔창에서 new Notification("hi")등으로 확인가능
+
+React-Hooks_useAxios(약간 사이즈가 큼) : HTTP rquest 만드는것
+(코드샌박) axios dependency 추가(npm같은 개념)
+
+-> customization과 configuration을 허용함
+
+new Date() : 시간생성
+Date.now() : 숫자생성
